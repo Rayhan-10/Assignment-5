@@ -17,9 +17,9 @@
     </style>
 </head>
 
-<body class="bg-gray-300 poppins">
+<body id="body" class="poppins">
     <!--nav bar -->
-    <header class="mb-4 p-5">
+    <header class="p-5">
         <nav>
         <div class="flex items-center justify-between space-x-4 bg-white py-2 px-4 rounded-lg">
             <div class="flex items-center space-x-2">
@@ -29,9 +29,9 @@
             <div class="flex justify-between items-center space-x-3">
                 <div class="flex items-center space-x-2 bg-gray-100 px-3 py-1 rounded-full">
                     <img src="assets/checkbox.png" alt="checkbox">
-                    <p class="font-extrabold">23</p>
+                    <p id="Total-board" class="font-extrabold">23</p>
                 </div>
-                <div class="bg-gray-100 rounded-full">
+                <div id="theme-btn" class="bg-gray-100 rounded-full cursor-pointer">
                     <img src="assets/theme-btn.png" alt="">
                 </div>
             </div>
@@ -49,10 +49,10 @@
                     </div>
                     <div>
                         <p>Task Assigned</p>
-                        <p class="font-extrabold">6</p>
+                        <p id="total-task" class="font-extrabold">6</p>
                     </div>
                 </div>
-                <div id="click-for-blog" class="flex flex-1 items-center bg-gradient-to-r from-blue-500 to-indigo-600 rounded-md py-3 px-2">
+                <div id="click-for-blog" class="flex flex-1 items-center bg-gradient-to-r from-blue-500 to-indigo-600 rounded-md py-3 px-2 cursor-pointer">
                     <div>
                         <img src="assets/board.png" alt="">
                     </div>
@@ -82,7 +82,7 @@
                             <h3 class="text-[12px]">Deadline</h3>
                             <h2 class="font-bold text-[14px]">21 March 2025</h2>
                         </div>
-                        <button id="ShopEase" class="btn btn-primary">Completed</button>
+                        <button id="btn-card-1" class="btn btn-primary btn-card">Completed</button>
                     </div>
 
                 </div>
@@ -96,7 +96,7 @@
                             <h3 class="text-[12px]">Deadline</h3>
                             <h2 class="font-bold text-[14px]">21 March 2025</h2>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button class="btn btn-primary btn-card">Completed</button>
                     </div>
 
                 </div>
@@ -111,7 +111,7 @@
                             <h3 class="text-[12px]">Deadline</h3>
                             <h2 class="font-bold text-[14px]">21 March 2025</h2>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button class="btn btn-primary btn-card">Completed</button>
                     </div>
 
                 </div>
@@ -125,7 +125,7 @@
                             <h3 class="text-[12px]">Deadline</h3>
                             <h2 class="font-bold text-[14px]">21 March 2025</h2>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button class="btn btn-primary btn-card">Completed</button>
                     </div>
 
                 </div>
@@ -139,7 +139,7 @@
                             <h3 class="text-[12px]">Deadline</h3>
                             <h2 class="font-bold text-[14px]">21 March 2025</h2>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button class="btn btn-primary btn-card">Completed</button>
                     </div>
 
                 </div>
@@ -153,7 +153,7 @@
                             <h3 class="text-[12px]">Deadline</h3>
                             <h2 class="font-bold text-[14px]">21 March 2025</h2>
                         </div>
-                        <button class="btn btn-primary">Completed</button>
+                        <button class="btn btn-primary btn-card">Completed</button>
 
                     </div>
 
@@ -167,15 +167,17 @@
                 <h2>Activity Log</h2>
             </div>
             <div class="flex justify-center">
-                <button class="btn btn-primary ">Clear History</button>
+                <button id="clear-history" class="btn btn-primary">Clear History</button>
             </div>
-            
-
+            <div id="Complete-task" class="p-2 space-y-2">
+               
+            </div>
         </section>
 
     </main>
 
 
+    <script src="JS/utils.js"></script>
     <script src="JS/main.js"></script>
 </body>
 
